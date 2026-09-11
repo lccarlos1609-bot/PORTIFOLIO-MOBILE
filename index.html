@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Retro VCR</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        font-family: sans-serif;
+        overflow-x: hidden;
+    }
+
+    /* Cada seção agora funciona como uma tela fluida vertical */
+    .slide-container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 15px;
+        position: relative;
+        border-bottom: 2px solid #222;
+    }
+
+    /* Imagens de fundo das pranchetas viram capas ou cabeçalhos da seção */
+    .slide-container > img.bg-slide {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    /* Container dos projetos/cards dentro das pranchetas */
+    .grid-projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 380px;
+        align-items: center;
+    }
+
+    /* Padronização universal para vídeos e fotos no mobile */
+    .grid-projetos video, 
+    .grid-projetos img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        border-radius: 1rem;
+        border: 2px solid #ffffff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        background-color: #111;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- PRANCHETA 1: CAPA -->
+    <div class="slide-container">
+        <img class="bg-slide" src="Prancheta 1.jpg" alt="Capa">
+    </div>
+
+    <!-- PRANCHETA 2: SOBRE MIM -->
+    <div class="slide-container">
+        <img class="bg-slide" src="Prancheta 2.jpg" alt="Sobre Mim">
+    </div>
+
+    <!-- PRANCHETA 3: HABILIDADES -->
+    <div class="slide-container">
+        <img class="bg-slide" src="Prancheta 3.jpg" alt="Habilidades">
+    </div>
+
+    <!-- PRANCHETA 4: PROJETOS -->
+    <div class="slide-container">
+        <img class="bg-slide" src="Prancheta 4.jpg" alt="PROJETOS">
+        <div class="grid-projetos">
+            <video controls autoplay muted loop id="bgvideo">
+                <source src="PORQUE ELES DORMEM TANTO.mp4" type="video/mp4">
+            </video>
+            <video controls autoplay muted loop id="video2">
+                <source src="PETS.mp4" type="video/mp4">
+            </video>
+            <img id="foto1" src="Sem Título-2-1.jpg" alt="Foto 1">
+            <img id="foto2" src="PETISQUINHO.png" alt="Foto2">
+            <img id="foto3" src="BOBBY.jpg" alt="Foto3">
+        </div>
+    </div>
+
+    <!-- PRANCHETA 5 -->
+    <div class="slide-container">
+        <img class="bg-slide" src="prancheta-5.jpg" alt="Meus Projetos">
+        <div class="grid-projetos">
+            <video controls autoplay muted loop id="bgvideo2">
+                <source src="EXPORT  TRABALHO 100% FOCADO.mp4" type="video/mp4">
+            </video>
+            <img id="foto6" src="produtividade.jpg" alt="foto 6">
+            <video controls autoplay muted loop id="video3">
+                <source src="SEU NOVO CYBER CAFÉ.mp4" type="video/mp4">
+            </video>
+            <img id="foto7" src="PARA-UMA-MELHOR-PERFORMANCE.jpg" alt="foto7">
+        </div>
+    </div>
+
+    <!-- PRANCHETA 6 -->
+    <div class="slide-container">
+        <img class="bg-slide" src="prancheta-6.jpg" alt="meus projetos">
+        <div class="grid-projetos">
+            <video controls autoplay muted loop id="video4">
+                <source src="VERDAC.mp4" type="video/mp4">
+            </video>
+            <img id="foto8" src="sim-é-possivel-trabalhar-em-um-ambiente-saudavel--FINAL.jpg" alt="foto8">
+            <video controls autoplay muted loop id="video5">
+                <source src="DEEP WORK  mp4.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
